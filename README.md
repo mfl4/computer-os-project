@@ -1,4 +1,5 @@
-# Computer-os-project
+# Algorythm and Programming
+## computer-os-project
 
 This repository contains projects to complete group assignments of algorithms and programming.
 
@@ -7,7 +8,7 @@ This repository contains projects to complete group assignments of algorithms an
 - **Group Name: rossum.pyc**
 
 **Members:**
-| No | Nama Lengkap | NIM | Github Username |
+| No | Full Name | NIM | Github Username |
 | :--- | :--- | :--- | :--- |
 | 1 | Naufal Zul Helmi Maulana | L200220211 | NAUFALZULHM |
 | 2 | Dhanar Aji Kusumo | L200220221 | Dhanarzone |
