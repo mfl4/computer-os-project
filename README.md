@@ -1,4 +1,4 @@
-# Algorythm and Programming
+# Algorithm and Programming
 ## computer-os-project
 
 This repository contains projects to complete group assignments of algorithms and programming.
