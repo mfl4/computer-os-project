@@ -1,11 +1,11 @@
 kota, provinsi = 'Solo', 'Jawa Tengah'
 
-def hello ():
+def tempat ():
   provinsi = 'Yogyakarta'
   print(kota, provinsi)
 
 print('Dimana sekarang?')
-hello()
+tempat()
 
 print('\nTampilkan')
 print(kota, provinsi)
