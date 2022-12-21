@@ -7,6 +7,8 @@ This repository contains projects to complete group assignments of algorithms an
 - **Module: os**
 - **Group Name: rossum.pyc**
 
+![1](https://user-images.githubusercontent.com/112812007/208909911-414cea02-ccb8-4507-bc68-29bf74e97d84.png)
+
 **Members:**
 | No | Full Name | NIM | Github Username |
 | :--- | :--- | :--- | :--- |
