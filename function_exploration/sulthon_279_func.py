@@ -4,8 +4,8 @@
 #      return L
 # print(luas_jajargenjang(12,100))
 
-print(" ———Toko UMMI———")
-def sumof(price,summ):
+print(" ———UMS MART———")
+def sumof(Price,summ):
      """fungsi untuk menghitung Total bayar"""
      return Price*summ
 #input data
