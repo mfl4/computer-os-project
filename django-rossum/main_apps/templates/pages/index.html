@@ -1,0 +1,36 @@
+{% extends '../base.html' %} {% load static %} {% block main %} {% block head %} {% endblock head %}
+
+<div class="container col-xxl-8 px-4 mb-5 py-5 bg-info w-100">
+	<div class="row flex-sm-row-reverse align-items-center g-5 py-5">
+		<div class="col-10 col-sm-8 col-lg-6">
+			<img src="{% static '/images/brand/Design Logo Rossum.png' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+		</div>
+		<div class="col-lg-6 text-white">
+			<link rel="stylesheet" href="{% static '/styles/index.css' %}" />
+			<p class="lead fw-bold">
+				Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and
+				powerful JavaScript plugins.
+			</p>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+				<button type="button" class="btn btn-info btn-lg px-4 me-md-2 text-white">S</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1 class="text-center text-100 text-white">Tech Stack</h1>
+<hr class="text-white" />
+<div class="d-flex flex-wrap flex-row text-white justify-content-sm-evenly mb-5">
+	<div id="box" class="">Flex item 1</div>
+	<div id="box" class="">Flex item 5</div>
+	<div id="box" class="">
+		<img class="img-1" src="{% static '/images/tech/js.png' %}" alt="" />
+		<img class="img-2" src="{% static '/images/tech/js-abu.png' %}" alt="" />
+		<p>Javascript</p>
+	</div>
+	<div id="box" class="">Flex item 4</div>
+	<div id="box" class="">Flex item 5</div>
+	<div id="box" class="">Flex item 6</div>
+	<div id="box" class="">Flex item 7</div>
+</div>
+{% endblock main %}
