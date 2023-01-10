@@ -1,1 +1,49 @@
-{% extends '../base.html' %}
+{% extends '../base.html' %} {% block head %} {% endblock head %} {% block main %}
+
+<div id="program-content" class="container bg-info text-white rounded p-5">
+	<h1><strong>Computer Price Check</strong></h1>
+	<hr />
+	<form method="post" action="{% url 'program' %}">
+		{% csrf_token %}
+
+		<label for="processor">Processor:</label>
+		<select name="processor">
+			<option value="Intel Core i5">Intel Core i5</option>
+			<option value="Intel Core i7">Intel Core i7</option>
+			<option value="AMD Ryzen 5">AMD Ryzen 5</option>
+			<option value="AMD Ryzen 7">AMD Ryzen 7</option>
+		</select>
+		<br />
+		<label for="memory">Memory:</label>
+		<select name="memory">
+			<option value="4GB">4GB</option>
+			<option value="8GB">8GB</option>
+			<option value="16GB">16GB</option>
+		</select>
+		<br />
+		<label for="hard_drive">Hard Drive:</label>
+		<select name="hard_drive">
+			<option value="500GB">500GB</option>
+			<option value="1TB">1TB</option>
+			<option value="2TB">2TB</option>
+		</select>
+		<br />
+		<label for="graphics_card">Graphics Card:</label>
+		<select name="graphics_card">
+			<option value="Integrated">Integrated</option>
+			<option value="Dedicated">Dedicated</option>
+		</select>
+		<br />
+		<input type="submit" value="Generate the price" />
+	</form>
+
+	<div class="container mt-5">
+		<h1 class="fw-bold">Price</h1>
+		<hr />
+		<div class="">
+			
+		</div>
+	</div>
+</div>
+
+{% endblock main %}

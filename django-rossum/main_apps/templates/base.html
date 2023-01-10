@@ -10,10 +10,10 @@
 		{% include 'components/css_link.html' %} {% block head %} {% endblock head %}
 	</head>
 
-	<body class="d-flex flex-column h-100 bg-secondary">
+	<body class="d-flex flex-column">
 		<header>{% include 'components/nav.html' %}</header>
 
-		<main class="mt-5">{% block main %} {% endblock main %}</main>
+		<main class="mt-5 mb-5">{% block main %} {% endblock main %}</main>
 
 		<footer class="footer mt-auto py-2 text-info">{% include 'components/footer.html' %}</footer>
 

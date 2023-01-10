@@ -1,41 +1,98 @@
 {% extends '../base.html' %} {% load static %} {% block main %}
 <div id="history-content" class="container bg-info text-white rounded p-5">
-	<h1>{{ title }}</h1>
-	<hr class="w-1" />
+	<h1><strong>{{ title }}</strong></h1>
+	<hr />
 	<div class="accordion bg-info" id="accordionPanelsStayOpenExample">
 		<div class="accordion-item">
 			<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Generasi pertam</button>
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+					<strong>Generasi Pertama (1940-1959)</strong>
+				</button>
 			</h2>
 			<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
 				<div class="accordion-body">
-					<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as
-					the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
-					transition does limit overflow.
+					Dengan terjadinya Perang Dunia II, negara-negara yang terlibat dalam perang tersebut berusaha mengembangkan komputer untuk mengeksploitasi potensi strategis yang dimiliki komputer. Hal ini meningkatkan pendanaan pengembangan
+					komputer serta mempercepat kemajuan teknik komputer. Pada tahun 1941, Conrad Zuse, seorang insinyur Jerman, membangun sebuah komputer, Z3, untuk mendesain pesawat terbang dan peluru kendali. Blok sekutu juga membuat kemajuan lain
+					dalam pengembangan kekuatan komputer. Tahun 1943, Inggris menyelesaikan komputer pemecah kode rahasia yang dinamakan Komputer Colossus untuk memecahkan kode rahasia yang digunakan Jerman Nazi. Dampak pembuatan Colossus tidak
+					terlalu memengaruhi perkembangan industri komputer dikarenakan dua alasan. Pertama, Colossus bukan merupakan komputer serbaguna, tetpai ia hanya didesain untuk memecahkan kode rahasia. Kedua, keberadaan mesin ini dijaga
+					kerahasiaannya hingga satu dekade setelah perang berakhir. Usaha yang dilakukan oleh Amerika Serikat pada saat itu menghasilkan suatu kemajuan lain. Howard Aiken, seorang insinyur Harvard yang bekerja dengan IBM, berhasil
+					memproduksi kalkulator elektronik untuk Angkatan Laut Amerika Serikat. Kalkulator tersebut berukuran panjang setengah lapangan bola kaki dan memiliki rentang kabel sepanjang 500 mil. The Harvard-IBM Automatic Sequence Controlled
+					Calculator, atau Mark I, merupakan komputer relai elektronik. Ia menggunakan sinyal elektromagnetik untuk menggerakkan komponen mekanik. Mesin tersebut beroperasi dengan lambat (ia membutuhkan 3-5 detik untuk setiap perhitungan)
+					dan tidak fleksibel (urutan kalkulasi tidak dapat diubah). Kalkulator tersebut dapat melakukan perhitungan aritmatik dasar dan persamaan yang lebih kompleks. Sejarah perkembangan komputer lain pada masa itu adalah Electronic
+					Numerical Integrator and Computer (ENIAC), yang dibuat atas kerja sama antara pemerintah Amerika Serikat danUniversitas Pennsylvania. Terdiri dari 18.000 tabung vakum, 70.000 resistor, dan 5 juta titik solder, komputer tersebut
+					merupakan mesin yang sangat besar dan mengonsumsi daya sebesar 160 kW. Dirancang oleh John Presper Eckert dan John Mauchly, ENIAC merupakan komputer serbaguna yang bekerja 1000 kali lebih cepat dibandingkan Mark I.
 				</div>
 			</div>
 		</div>
 		<div class="accordion-item">
 			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Accordion Item #2</button>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+					<strong>Generasi Kedua (1959-1965)</strong>
+				</button>
 			</h2>
 			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
 				<div class="accordion-body">
-					<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as
-					the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
-					transition does limit overflow.
+					Pada tahun 1948, penemuan transistor sangat memengaruhi perkembangan komputer. Transistor menggantikan tabung vakum di televisi, radio, dan komputer. Akibatnya, ukuran mesin-mesin elektrik berkurang drastis. Transistor mulai
+					digunakan di dalam komputer mulai pada tahun 1956. Penemuan lain yang berupa pengembangan memori inti-magnetik membantu pengembangan komputer generasi kedua yang lebih kecil, lebih cepat, lebih dapat diandalkan, dan lebih hemat
+					energi dibanding para pendahulunya. Mesin pertama yang memanfaatkan teknologi baru ini adalah superkomputer. IBM membuat superkomputer bernama Stretch, dan Sprery-Rand membuat komputer bernama LARC. Komputer-komputer ini, yang
+					dikembangkan untuk laboratorium energi atom, dapat menangani sejumlah besar data, sebuah kemampuan yang sangat dibutuhkan oleh peneliti atom. Mesin tersebut sangat mahal dan cenderung terlalu kompleks untuk kebutuhan komputasi
+					bisnis, sehingga membatasi kepopulerannya. Hanya ada dua LARC yang pernah dipasang dan digunakan. Satu terdapat di Lawrence Radiation Labs di Livermore, California, dan yang lainnya di US Navy Research and Development Center di
+					Washington D.C. Komputer generasi kedua menggantikan bahasa mesin dengan Bahasa rakitan. Bahasa rakitan adalah bahasa yang menggunakan singkatan-singakatan untuk menggantikan kode biner.
 				</div>
 			</div>
 		</div>
 		<div class="accordion-item">
 			<h2 class="accordion-header" id="panelsStayOpen-headingThree">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">Accordion Item #3</button>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+					<strong>Generasi Ketiga (1965-1970)</strong>
+				</button>
 			</h2>
 			<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
 				<div class="accordion-body">
-					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as
-					the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
-					transition does limit overflow.
+					Walaupun transistor dalam banyak hal mengungguli tube vakum, namun transistor menghasilkan panas yang cukup besar, yang dapat berpotensi merusak bagian-bagian internal komputer. Batu kuarsa menghilangkan masalah ini. Jack Kilby,
+					seorang insinyur di Texas Instruments, mengembangkan sirkuit terpadupada tahun 1958. IC mengkombinasikan tiga komponen elektronik dalam sebuah piringan silikon kecil yang terbuat dari pasir kuarsa. Para ilmuwan kemudian berhasil
+					memasukkan lebih banyak komponen-komponen ke dalam suatu chip tunggal yang disebut semikonduktor. Hasilnya, komputer menjadi semakin kecil karena komponen-komponen dapat dipadatkan dalam chip. Kemajuan komputer generasi ketiga
+					lainnya adalah penggunaan sistem operasi (operating system) yang memungkinkan mesin untuk menjalankan berbagai program yang berbeda secara serentak dengan sebuah program utama yang memonitor dan mengkoordinasi memori komputer.
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+					<strong>Generasi Keempat (dimulai dari tahun 1970)</strong>
+				</button>
+			</h2>
+			<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+				<div class="accordion-body">
+					Setelah IC, tujuan pengembangan menjadi lebih jelas: mengecilkan ukuran sirkuit dan komponen-komponen elektrik. Large Scale Integration (LSI) dapat memuat ratusan komponen dalam sebuah chip. Pada tahun 1980-an, Very Large Scale
+					Integration (VLSI) memuat ribuan komponen dalam sebuah chip tunggal. Seorang anak sedang mengoperasikan IBM PC Ultra-Large Scale Integration (ULSI) meningkatkan jumlah tersebut menjadi jutaan. Kemampuan untuk memasang sedemikian
+					banyak komponen dalam suatu keping yang berukurang setengah keping uang logam mendorong turunnya harga dan ukuran komputer. Hal tersebut juga meningkatkan daya kerja, efisiensi dan keterandalan komputer. Chip Intel 4004 yang
+					dibuat pada tahun 1971 membawa kemajuan pada IC dengan meletakkan seluruh komponen dari sebuah komputer (central processing unit, memori, dan kendali input/output) dalam sebuah chip yang sangat kecil. Sebelumnya, IC dibuat untuk
+					mengerjakan suatu tugas tertentu yang spesifik. Kini, sebuah mikroprosesor dapat diproduksi dan kemudian diprogram untuk memenuhi seluruh kebutuhan yang diinginkan. Tidak lama kemudian, setiap peranti rumah tangga seperti
+					microwave, oven, televisi, dan mobil dengan electronic fuel injection (EFI) dilengkapi dengan mikroprosesor. Perkembangan yang demikian memungkinkan orang-orang biasa untuk menggunakan komputer biasa. Komputer tidak lagi menjadi
+					dominasi perusahaan-perusahaan besar atau lembaga pemerintah. Pada pertengahan tahun 1970-an, perakit komputer menawarkan produk komputer mereka ke masyarakat umum. Komputer-komputer ini, yang disebut minikomputer, dijual dengan
+					paket peranti lunak yang mudah digunakan oleh kalangan awam. Peranti lunak yang paling populer pada saat itu adalah program word processing dan spreadsheet. Pada awal 1980-an, video game seperti Atari 2600 menarik perhatian
+					konsumen pada komputer rumahan yang lebih canggih dan dapat diprogram.
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+					<strong>Generasi Kelima</strong>
+				</button>
+			</h2>
+			<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+				<div class="accordion-body">
+					Contoh imajinatif komputer generasi kelima adalah komputer fiksi HAL9000 dari novel karya Arthur C. Clarke berjudul 2001: Space Odyssey. HAL menampilkan seluruh fungsi yang diinginkan dari sebuah komputer generasi kelima. Dengan
+					kecerdasan buatan (artificial intelligence atau AI), HAL dapat cukup memiliki nalar untuk melakukan percapakan dengan manusia, menggunakan masukan visual, dan belajar dari pengalamannya sendiri. Walaupun mungkin realisasi HAL9000
+					masih jauh dari kenyataan, banyak fungsi-fungsi yang dimilikinya sudah terwujud. Beberapa komputer dapat menerima instruksi secara lisan dan mampu meniru nalar manusia. Kemampuan untuk menterjemahkan bahasa asing juga menjadi
+					mungkin. Fasilitas ini tampak sederhana. Namun fasilitas tersebut menjadi jauh lebih rumit dari yang diduga ketika programmer menyadari bahwa pengertian manusia sangat bergantung pada konteks dan pengertian ketimbang sekadar
+					menterjemahkan kata-kata secara langsung. Banyak kemajuan di bidang desain komputer dan teknologi yang semakin memungkinkan pembuatan komputer generasi kelima. Dua kemajuan rekayasa yang terutama adalah kemampuan pemrosesan
+					paralel, yang akan menggantikan model non Neumann. Model non Neumann akan digantikan dengan sistem yang mampu mengkoordinasikan banyak CPU untuk bekerja secara serempak. Kemajuan lain adalah teknologi superkonduktor yang
+					memungkinkan aliran elektrik tanpa ada hambatan apapun, yang nantinya dapat mempercepat kecepatan informasi. Jepang adalah negara yang terkenal dalam sosialisasi jargon dan proyek komputer generasi kelima. Lembaga ICOT (Institute
+					for new Computer Technology) juga dibentuk untuk merealisasikannya. Banyak kabar yang menyatakan bahwa proyek ini telah gagal, namun beberapa informasi lain bahwa keberhasilan proyek komputer generasi kelima ini akan membawa
+					perubahan baru paradigma komputerisasi di dunia.
 				</div>
 			</div>
 		</div>

@@ -1,93 +1,126 @@
 {% extends "../base.html" %} {% load static %} {% block head %}
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+<style>
+	img {
+		max-height: 440px;
+	}
+</style>
+
 {% endblock head %} {% block main %}
 
-<div class="container bootstrap">
-	<section id="team" class="white-bg padding-top-bottom">
-		<div class="container bootstrap">
-			<h1 class="section-title text-center page-title">Meet our team</h1>
-			<p class="section-description text-center">We are a small team with great skills. See the faces behind the lines of code.</p>
-			<div class="row member-content">
-				<div class="col-sm-3 col-sm-offset-1 member-thumb fade-right in">
-					<img class="img-responsive img-center img-thumbnail img-rounded" src="https:/.com/img/Content/avatar/avatar7.png" alt="" />
-					<h4>John Doe</h4>
-					<p class="title">Lead Designer &amp; Founder</p>
-				</div>
-				<div class="col-sm-7">
-					<div class="details">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						<ul class="social-content">
-							<li>
-								<a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-twitter fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-facebook fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-linkedin fa-fw"></i></a>
-							</li>
+<div id="about-content" class="container mt-5 bg-info text-white rounded">
+	<div class="container">
+		<h1 class="mt-5"><strong>About Our Team</strong></h1>
+		<hr />
+
+		<!-- Team Members -->
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Sulthon.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Sulthon Kaffaah Al Farizzi</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220279</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/SulthonKAF">@SulthonKAF</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
-			<div class="row member-content">
-				<div class="col-sm-3 col-sm-push-8 member-thumb">
-					<img class="img-responsive img-center img-thumbnail img-rounded" src="https:/.com/img/Content/avatar/avatar6.png" alt="" />
-					<h4>John Doe</h4>
-					<p class="title">Designer</p>
-				</div>
-				<div class="col-sm-7 col-sm-pull-2">
-					<div class="details">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						<ul class="social-content">
-							<li>
-								<a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-twitter fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-facebook fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-linkedin fa-fw"></i></a>
-							</li>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Ogya.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Ogya Rajendra</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220275</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/OgyaRajendra"></a>@OgyaRajendra</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
-			<div class="row member-content">
-				<div class="col-sm-3 col-sm-offset-1 member-thumb">
-					<img class="img-responsive img-center img-thumbnail img-rounded" src="https:/.com/img/Content/avatar/avatar1.png" alt="" />
-					<h4></h4>
-					<p class="title">Lead Developer</p>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Naufal.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Naufal Zul Helmi Maulana</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220211</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/NAUFALZULHM">@NAUFALZULHM</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-sm-7">
-					<div class="details">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						<ul class="social-content">
-							<li>
-								<a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-twitter fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-facebook fa-fw"></i></a>
-							</li>
-							<li>
-								<a href="#link"><i class="fa fa-linkedin fa-fw"></i></a>
-							</li>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Dhanar.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Dhanar Aji Kusumo</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220221</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/Dhanarzone">@Dhanarzone</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Rizky.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Rizky Maulana Saputra</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220230</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/RizkyMaulanaS">@RizkyMaulanaS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Riza.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Riza Ainur Ridho</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220252</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/Rizainur">@Rizainur</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Farhan.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Mhd. Farhan Lubis</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220277</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/MhdFarhanLubis">@MhdFarhanLubis</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 border-black border-5 bg-black">
+					<img src="{% static 'images/teams/Yusuf.png' %}" class="card-img-top" alt="" />
+					<div class="card-body">
+						<h5 class="card-title text-info fw-bold">Yusuf Cahyo Utomo</h5>
+						<p class="card-text text-info fst-italic">"Fokuslah pada hal-hal yang bisa kamu kontrol dan pengaruhi Ikhlaskan untuk hal-hal yang tidak bisa kamu kontrol dan pengaruhi."</p>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-dark text-white fw-bold">NIM: L200220237</li>
+							<li class="list-group-item bg-dark text-white fw-bold">Github: <a class="text-info" href="https://github.com/sichyz">@sichyz</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 </div>
+
 {% endblock main %}
