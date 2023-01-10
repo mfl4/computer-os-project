@@ -57,7 +57,6 @@ footer {
 	background: linear-gradient(30deg, rgba(9, 30, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
 	z-index: 1;
 }
-
 #box img {
 	height: 100px;
 	z-index: 2;

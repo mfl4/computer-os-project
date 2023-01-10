@@ -6,13 +6,33 @@
 	<form method="post" action="{% url 'program' %}">
 		{% csrf_token %}
 
-		<label for="processor">Processor:</label>
-		<select name="processor">
-			<option value="Intel Core i5">Intel Core i5</option>
-			<option value="Intel Core i7">Intel Core i7</option>
-			<option value="AMD Ryzen 5">AMD Ryzen 5</option>
-			<option value="AMD Ryzen 7">AMD Ryzen 7</option>
+		<label for="vga">VGA: </label>
+		<select name="vga">
+			<option value="GTX 1050">GTX 1050</option>
+			<option value="GTX 1050 TI">GTX 1050 TI</option>
+			<option value="GTX 1650">GTX 1650</option>
+			<option value="GTX 1660">GTX 1660</option>
+			<option value="GTX 1660 SUPER">GTX 1660 SUPER</option>
+			<option value="GTX 1660 TI">GTX 1660 TI</option>
+			<option value="RTX 2060">RTX 2060</option>
+			<option value="RTX 2060 SUPER">RTX 2060 SUPER</option>
+			<option value="RTX 2070">RTX 2070</option>
+			<option value="RTX 2070 SUPER">RTX 2070 SUPER</option>
+			<option value="RTX 2080">RTX 2080</option>
+			<option value="RTX 2080 SUPER">RTX 2080 SUPER</option>
+			<option value="RTX 2080 TI">RTX 2080 TI</option>
+			<option value="RTX 3060">RTX 3060</option>
+			<option value="RTX 3060 TI">RTX 3060 TI</option>
+			<option value="RTX 3070">RTX 3070</option>
+			<option value="RTX 3070 TI">RTX 3070 TI</option>
+			<option value="RTX 3080">RTX 3080</option>
+			<option value="RTX 3080 TI">RTX 3080 TI</option>
+			<option value="RTX 3090">RTX 3090</option>
+			<option value="RTX 3090 TI">RTX 3090 TI</option>
+			<option value="RTX 3060">RTX 3060</option>
+			<option value="RTX 3060 TI">RTX 3060 TI</option>
 		</select>
+		<br />
 		<br />
 		<label for="memory">Memory:</label>
 		<select name="memory">
@@ -21,6 +41,7 @@
 			<option value="16GB">16GB</option>
 		</select>
 		<br />
+		<br />
 		<label for="hard_drive">Hard Drive:</label>
 		<select name="hard_drive">
 			<option value="500GB">500GB</option>
@@ -28,11 +49,13 @@
 			<option value="2TB">2TB</option>
 		</select>
 		<br />
+		<br />
 		<label for="graphics_card">Graphics Card:</label>
 		<select name="graphics_card">
 			<option value="Integrated">Integrated</option>
 			<option value="Dedicated">Dedicated</option>
 		</select>
+		<br />
 		<br />
 		<input type="submit" value="Generate the price" />
 	</form>
@@ -40,9 +63,38 @@
 	<div class="container mt-5">
 		<h1 class="fw-bold">Price</h1>
 		<hr />
-		<div class="">
-			
-		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">No</th>
+					<th scope="col">VGA</th>
+					<th scope="col">RAM</th>
+					<th scope="col">Processor</th>
+					<th scope="col">cooling</th>
+					<th scope="col">Motherboard</th>
+					<th scope="col">psu</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td colspan="2">Larry the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 

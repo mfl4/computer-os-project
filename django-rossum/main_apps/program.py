@@ -235,7 +235,7 @@ class Computer:
         # mengembalikan nilai total_price
         return total_price
 
-# # meminta input spes ifikasi laptop dari user
+# # meminta input spesifikasi laptop dari user
 # memori = input('Masukkan jenis memori (512/1000)GB: ')
 # ram = input('Masukkan jumlah RAM (4/6/8/16)GB: ')
 # procesor_Intel = input('''Masukkan jenis procesor_Intel |  i3 10100  |   i5 10400    |   i7 10700    |   i9 10900    |   i5 10600k   |   i7 10700k   |   i9 10900k   |
