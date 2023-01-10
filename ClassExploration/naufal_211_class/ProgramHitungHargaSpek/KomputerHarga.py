@@ -57,7 +57,7 @@ class Komputer:
         else:
             harga_total += 0
 
-        # procesor Amd
+        # procesor AMD
         if self.procesor_AMD == '3':
             harga_total += 1500000
         elif self.procesor_AMD == '5':
@@ -79,7 +79,7 @@ class Komputer:
         else:
             harga_total += 0
             
-        # Reso Layar
+        # Resolusi Layar
         if self.resolusi_layar == '1024 x 768':
             harga_total += 1000000
         elif self.resolusi_layar == '1366 x 768':

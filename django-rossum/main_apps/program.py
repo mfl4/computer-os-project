@@ -2,16 +2,15 @@ import os
 
 class Computer:
 # inisiasi
-    def __init__(self, vga, ram, procesor_Intel, procesor_AMD, mobo_intel, mobo_amd, psu,cooling):
+    def __init__(self, vga, ram):
     #, harga, ukuran_layar, port_usb, hdmi, wifi, durasi_baterai, , dimensi, merek, sistem_operasi, kamera, speaker
+        # self.no = no
         self.vga = vga
         self.ram = ram
-        self.procesor_Intel = procesor_Intel
-        self.procesor_AMD = procesor_AMD
-        self.mobo_intel = mobo_intel
-        self.mobo_amd = mobo_amd
-        self.psu = psu
-        self.cooling = cooling
+        # self.procesor = procesor
+        # self.mobo = mobo
+        # self.psu = psu
+        # self.cooling = cooling
     # self.port_usb = port_usb
     # self.hdmi = hdmi
     # self.wifi = wifi
@@ -22,7 +21,12 @@ class Computer:
     # self.sistem_operasi = sistem_operasi
     # self.kamera = kamera
     # self.speaker = speaker
-# Membuat fungsi hitung_harga 
+# Membuat fungsi hitung_harga
+    # def take_item(self):
+    #     l_items = [self.no, self.vga, self.ram, self.procesor, self.mobo, self.psu, self.cooling, self.sum_price()]
+    #     return l_items
+    
+
     def sum_price(self):
         total_price = 0
 
@@ -84,153 +88,153 @@ class Computer:
         else:
             total_price += 0
 
-        # Procesor Intel
-        if self.procesor_Intel == 'i3 10100':
-            total_price += 1350000
-        elif self.procesor_Intel == 'i5 10400':
-            total_price += 1900000
-        elif self.procesor_Intel == 'i5 10600k':
-            total_price += 3300000
-        elif self.procesor_Intel == 'i7 10700':
-            total_price += 3200000
-        elif self.procesor_Intel == 'i7 10700k':
-            total_price += 4600000
-        elif self.procesor_Intel == 'i9 10900':
-            total_price += 5400000
-        elif self.procesor_Intel == 'i7 10900k':
-            total_price += 6000000
-        elif self.procesor_Intel == 'i3 11100':
-            total_price += 1350000
-        elif self.procesor_Intel == 'i5 11400':
-            total_price += 2200000
-        elif self.procesor_Intel == 'i5 11600k':
-            total_price += 3450000
-        elif self.procesor_Intel == 'i7 11700':
-            total_price += 3850000
-        elif self.procesor_Intel == 'i7 11700k':
-            total_price += 5100000
-        elif self.procesor_Intel == 'i9 11900':
-            total_price += 6200000
-        elif self.procesor_Intel == 'i9 11900k':
-            total_price += 7350000
-        elif self.procesor_Intel == 'i3 12100':
-            total_price += 2100000
-        elif self.procesor_Intel == 'i5 12400':
-            total_price += 2700000
-        elif self.procesor_Intel == 'i5 12600k':
-            total_price += 4900000
-        elif self.procesor_Intel == 'i7 12700':
-            total_price += 5700000
-        elif self.procesor_Intel == 'i7 12700k':
-            total_price += 7650000
-        elif self.procesor_Intel == 'i9 12900':
-            total_price += 8250000
-        elif self.procesor_Intel == 'i9 12900k':
-            total_price += 9200000
-        elif self.procesor_Intel == 'i3 13100':
-            total_price += 2500000
-        elif self.procesor_Intel == 'i5 13400':
-            total_price += 3750000
-        elif self.procesor_Intel == 'i5 13600k':
-            total_price += 5250000
-        elif self.procesor_Intel == 'i7 13700':
-            total_price += 6500000
-        elif self.procesor_Intel == 'i7 13700k':
-            total_price += 8240000
-        elif self.procesor_Intel == 'i9 13900':
-            total_price += 9400000
-        elif self.procesor_Intel == 'i9 13900k':
-            total_price += 1055000
+        # # Procesor Intel
+        # if self.procesor == 'i3 10100':
+        #     total_price += 1350000
+        # elif self.procesor == 'i5 10400':
+        #     total_price += 1900000
+        # elif self.procesor == 'i5 10600k':
+        #     total_price += 3300000
+        # elif self.procesor == 'i7 10700':
+        #     total_price += 3200000
+        # elif self.procesor == 'i7 10700k':
+        #     total_price += 4600000
+        # elif self.procesor == 'i9 10900':
+        #     total_price += 5400000
+        # elif self.procesor == 'i7 10900k':
+        #     total_price += 6000000
+        # elif self.procesor == 'i3 11100':
+        #     total_price += 1350000
+        # elif self.procesor == 'i5 11400':
+        #     total_price += 2200000
+        # elif self.procesor == 'i5 11600k':
+        #     total_price += 3450000
+        # elif self.procesor == 'i7 11700':
+        #     total_price += 3850000
+        # elif self.procesor == 'i7 11700k':
+        #     total_price += 5100000
+        # elif self.procesor == 'i9 11900':
+        #     total_price += 6200000
+        # elif self.procesor == 'i9 11900k':
+        #     total_price += 7350000
+        # elif self.procesor == 'i3 12100':
+        #     total_price += 2100000
+        # elif self.procesor == 'i5 12400':
+        #     total_price += 2700000
+        # elif self.procesor == 'i5 12600k':
+        #     total_price += 4900000
+        # elif self.procesor == 'i7 12700':
+        #     total_price += 5700000
+        # elif self.procesor == 'i7 12700k':
+        #     total_price += 7650000
+        # elif self.procesor == 'i9 12900':
+        #     total_price += 8250000
+        # elif self.procesor == 'i9 12900k':
+        #     total_price += 9200000
+        # elif self.procesor == 'i3 13100':
+        #     total_price += 2500000
+        # elif self.procesor == 'i5 13400':
+        #     total_price += 3750000
+        # elif self.procesor == 'i5 13600k':
+        #     total_price += 5250000
+        # elif self.procesor == 'i7 13700':
+        #     total_price += 6500000
+        # elif self.procesor == 'i7 13700k':
+        #     total_price += 8240000
+        # elif self.procesor == 'i9 13900':
+        #     total_price += 9400000
+        # elif self.procesor == 'i9 13900k':
+        #     total_price += 1055000
 
-        # procesor Amd
-        elif self.procesor_AMD == '5 3600x':
-            total_price += 2200000
-        elif self.procesor_AMD == '7 3800x':
-            total_price += 3150000
-        elif self.procesor_AMD == '9 3900x':
-            total_price += 5240000
-        elif self.procesor_AMD == '9 3950x':
-            total_price += 7200000
-        elif self.procesor_AMD == '5 5600':
-            total_price += 2100000
-        elif self.procesor_AMD == '5 5600x':
-            total_price += 2450000
-        elif self.procesor_AMD == '7 5700x':
-            total_price += 3325000
-        elif self.procesor_AMD == '7 5800x':
-            total_price += 4100000
-        elif self.procesor_AMD == '9 5900x':
-            total_price += 6200000
-        elif self.procesor_AMD == '9 5950x':
-            total_price += 8250000
-        elif self.procesor_AMD == '5 7600x':
-            total_price += 4850000
-        elif self.procesor_AMD == '7 7800x':
-            total_price += 7250000
-        elif self.procesor_AMD == '9 7900x':
-            total_price += 8900000
-        elif self.procesor_AMD == '9 7950x':
-            total_price += 9950000
-        else:
-            total_price += 0
+        # # procesor Amd
+        # elif self.procesor == '5 3600x':
+        #     total_price += 2200000
+        # elif self.procesor == '7 3800x':
+        #     total_price += 3150000
+        # elif self.procesor == '9 3900x':
+        #     total_price += 5240000
+        # elif self.procesor == '9 3950x':
+        #     total_price += 7200000
+        # elif self.procesor == '5 5600':
+        #     total_price += 2100000
+        # elif self.procesor == '5 5600x':
+        #     total_price += 2450000
+        # elif self.procesor == '7 5700x':
+        #     total_price += 3325000
+        # elif self.procesor == '7 5800x':
+        #     total_price += 4100000
+        # elif self.procesor == '9 5900x':
+        #     total_price += 6200000
+        # elif self.procesor == '9 5950x':
+        #     total_price += 8250000
+        # elif self.procesor == '5 7600x':
+        #     total_price += 4850000
+        # elif self.procesor == '7 7800x':
+        #     total_price += 7250000
+        # elif self.procesor == '9 7900x':
+        #     total_price += 8900000
+        # elif self.procesor == '9 7950x':
+        #     total_price += 9950000
+        # else:
+        #     total_price += 0
 
-        # motherboard Intel
-        if self.mobo_intel == 'B460':
-            total_price += 3250000
-        elif self.mobo_intel == 'B560':
-            total_price += 4525000
-        elif self.mobo_intel == 'B660':
-            total_price += 5750000
-        elif self.mobo_intel == 'Z490':
-            total_price += 10525000
-        elif self.mobo_intel == 'Z590':
-            total_price += 17560000
-        elif self.mobo_intel == 'Z690':
-            total_price += 25520000
+        # # motherboard Intel
+        # if self.mobo == 'B460':
+        #     total_price += 3250000
+        # elif self.mobo == 'B560':
+        #     total_price += 4525000
+        # elif self.mobo == 'B660':
+        #     total_price += 5750000
+        # elif self.mobo == 'Z490':
+        #     total_price += 10525000
+        # elif self.mobo == 'Z590':
+        #     total_price += 17560000
+        # elif self.mobo == 'Z690':
+        #     total_price += 25520000
 
-        #motherboard AMD
-        elif self.mobo_amd == 'B450':
-            total_price += 2340000
-        elif self.mobo_amd == 'B550':
-            total_price += 4525000
-        elif self.mobo_amd == 'B650':
-            total_price += 5250000
-        elif self.mobo_amd == 'X470':
-            total_price += 5152000
-        elif self.mobo_amd == 'X570':
-            total_price += 8925000
-        elif self.mobo_amd == 'X670':
-            total_price += 1525000
-        else:
-            total_price += 0
+        # #motherboard AMD
+        # elif self.mobo == 'B450':
+        #     total_price += 2340000
+        # elif self.mobo == 'B550':
+        #     total_price += 4525000
+        # elif self.mobo == 'B650':
+        #     total_price += 5250000
+        # elif self.mobo == 'X470':
+        #     total_price += 5152000
+        # elif self.mobo == 'X570':
+        #     total_price += 8925000
+        # elif self.mobo == 'X670':
+        #     total_price += 1525000
+        # else:
+        #     total_price += 0
             
-        # power supply
-        if self.psu == '400w':
-            total_price += 650000
-        elif self.psu == '450w':
-            total_price += 725000
-        elif self.psu == '500w':
-            total_price += 820000
-        elif self.psu == '550w':
-            total_price += 865000
-        elif self.psu == '600w':
-            total_price += 885000
-        elif self.psu == '800w':
-            total_price += 1250000
-        elif self.psu == '1200w':
-            total_price += 1625000
-        else:
-            total_price += 0
+        # # power supply
+        # if self.psu == '400w':
+        #     total_price += 650000
+        # elif self.psu == '450w':
+        #     total_price += 725000
+        # elif self.psu == '500w':
+        #     total_price += 820000
+        # elif self.psu == '550w':
+        #     total_price += 865000
+        # elif self.psu == '600w':
+        #     total_price += 885000
+        # elif self.psu == '800w':
+        #     total_price += 1250000
+        # elif self.psu == '1200w':
+        #     total_price += 1625000
+        # else:
+        #     total_price += 0
         
-        # cooling menggunak All in one, tidak menerima cooling konvensional
-        if self.cooling == '120':
-            total_price += 1250000
-        elif self.cooling == '240':
-            total_price += 2340000
-        elif self.cooling == '360':
-            total_price += 4525000
-        else:
-            total_price += 0
+        # # cooling menggunak All in one, tidak menerima cooling konvensional
+        # if self.cooling == '120':
+        #     total_price += 1250000
+        # elif self.cooling == '240':
+        #     total_price += 2340000
+        # elif self.cooling == '360':
+        #     total_price += 4525000
+        # else:
+        #     total_price += 0
             
         # mengembalikan nilai total_price
         return total_price
@@ -238,7 +242,7 @@ class Computer:
 # # meminta input spesifikasi laptop dari user
 # memori = input('Masukkan jenis memori (512/1000)GB: ')
 # ram = input('Masukkan jumlah RAM (4/6/8/16)GB: ')
-# procesor_Intel = input('''Masukkan jenis procesor_Intel |  i3 10100  |   i5 10400    |   i7 10700    |   i9 10900    |   i5 10600k   |   i7 10700k   |   i9 10900k   |
+# procesor = input('''Masukkan jenis procesor |  i3 10100  |   i5 10400    |   i7 10700    |   i9 10900    |   i5 10600k   |   i7 10700k   |   i9 10900k   |
 #                               |  i3 11100  |   i5 11400    |   i7 11700    |   i9 11900    |   i5 11600k   |   i7 11700k   |   i9 11900k   |
 #                               |  i3 12100  |   i5 12400    |   i7 12700    |   i9 12900    |   i5 12600k   |   i7 12700k   |   i9 12900k   |
 #                               |  i3 13100  |   i5 13400    |   i7 13700    |   i9 13900    |   i5 13600k   |   i7 13700k   |   i9 13900k   |
@@ -252,7 +256,7 @@ class Computer:
 # berat = input('Masukkan berat dalam satuan kg (1/2): ')
 
 # # membuat objek laptop dengan spesifikasi yang dimasukkan oleh user
-# harga_laptop = Computer(memori, ram, procesor_Intel,procecor_AMD,layar, resolusi_layar, berat,procesor_Intel)
+# harga_laptop = Computer(memori, ram, procesor,procecor_AMD,layar, resolusi_layar, berat,procesor)
 # # menyimpan harga laptop ke file
 # with open('harga_laptop.txt', 'w') as f:
 #   f.write(str(harga_laptop))

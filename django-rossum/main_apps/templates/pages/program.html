@@ -6,8 +6,10 @@
 	<form method="post" action="{% url 'program' %}">
 		{% csrf_token %}
 
-		<label for="vga">VGA: </label>
-		<select name="vga">
+		<label for="vga" class="fw-bold text-center">VGA</label>
+		<hr>
+		<select name="vga" class="form-select">
+			<option selected">Choose your VGA</option>
 			<option value="GTX 1050">GTX 1050</option>
 			<option value="GTX 1050 TI">GTX 1050 TI</option>
 			<option value="GTX 1650">GTX 1650</option>
@@ -34,15 +36,20 @@
 		</select>
 		<br />
 		<br />
-		<label for="memory">Memory:</label>
-		<select name="memory">
-			<option value="4GB">4GB</option>
-			<option value="8GB">8GB</option>
-			<option value="16GB">16GB</option>
+
+		<label for="ram" class="fw-bold text-center">RAM</label>
+		<hr>
+		<select name="ram" class="form-select">
+			<option selected">Choose your RAM</option>
+			<option value="8 GB">8 GB</option>
+			<option value="16 GB">16 GB</option>
+			<option value="32 GB">32 GB</option>
+			<option value="64 GB">64 GB</option>
 		</select>
 		<br />
 		<br />
-		<label for="hard_drive">Hard Drive:</label>
+
+		<!-- <label for="hard_drive">Hard Drive:</label>
 		<select name="hard_drive">
 			<option value="500GB">500GB</option>
 			<option value="1TB">1TB</option>
@@ -56,7 +63,7 @@
 			<option value="Dedicated">Dedicated</option>
 		</select>
 		<br />
-		<br />
+		<br /> -->
 		<input type="submit" value="Generate the price" />
 	</form>
 
@@ -69,17 +76,17 @@
 					<th scope="col">No</th>
 					<th scope="col">VGA</th>
 					<th scope="col">RAM</th>
-					<th scope="col">Processor</th>
+					<!-- <th scope="col">Processor</th>
 					<th scope="col">cooling</th>
 					<th scope="col">Motherboard</th>
-					<th scope="col">psu</th>
+					<th scope="col">psu</th> -->
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
+					<th>1</th>
+					<td>{{vga}}</td>
+					<td>{{ram}}</td>
 					<td>@mdo</td>
 				</tr>
 				<tr>

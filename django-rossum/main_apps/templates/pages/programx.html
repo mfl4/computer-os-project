@@ -1,0 +1,147 @@
+{% extends '../base.html' %} {% block head %} {% endblock head %} {% block main %}
+
+<div id="program-content" class="container bg-info text-white rounded p-5">
+	<h1><strong>Computer Price Check</strong></h1>
+	<hr />
+	<form method="post" action="{% url 'program' %}">
+		{% csrf_token %}
+		
+		<label for="vga" class="fw-bold text-center">VGA</label>
+		<hr>
+		<select name="vga" class="form-select">
+			<option selected">Choose your VGA</option>
+			<option value="GTX 1050">GTX 1050</option>
+			<option value="GTX 1050 TI">GTX 1050 TI</option>
+			<option value="GTX 1650">GTX 1650</option>
+			<option value="GTX 1660">GTX 1660</option>
+			<option value="GTX 1660 SUPER">GTX 1660 SUPER</option>
+			<option value="GTX 1660 TI">GTX 1660 TI</option>
+			<option value="RTX 2060">RTX 2060</option>
+			<option value="RTX 2060 SUPER">RTX 2060 SUPER</option>
+			<option value="RTX 2070">RTX 2070</option>
+			<option value="RTX 2070 SUPER">RTX 2070 SUPER</option>
+			<option value="RTX 2080">RTX 2080</option>
+			<option value="RTX 2080 SUPER">RTX 2080 SUPER</option>
+			<option value="RTX 2080 TI">RTX 2080 TI</option>
+			<option value="RTX 3060">RTX 3060</option>
+			<option value="RTX 3060 TI">RTX 3060 TI</option>
+			<option value="RTX 3070">RTX 3070</option>
+			<option value="RTX 3070 TI">RTX 3070 TI</option>
+			<option value="RTX 3080">RTX 3080</option>
+			<option value="RTX 3080 TI">RTX 3080 TI</option>
+			<option value="RTX 3090">RTX 3090</option>
+			<option value="RTX 3090 TI">RTX 3090 TI</option>
+			<option value="RTX 3060">RTX 3060</option>
+			<option value="RTX 3060 TI">RTX 3060 TI</option>
+		</select>
+		<br />
+		<br />
+
+		<label for="ram" class="fw-bold text-center">RAM</label>
+		<hr>
+		<select name="ram" class="form-select">
+			<option selected">Choose your RAM</option>
+			<option value="8 GB">8 GB</option>
+			<option value="16 GB">16 GB</option>
+			<option value="32 GB">32 GB</option>
+			<option value="64 GB">64 GB</option>
+		</select>
+		<br />
+		<br />
+		
+		<!-- <label for="processor" class="fw-bold text-center">Processor</label>
+		<hr>
+		<select name="processor" class="form-select">
+			<option selected">Choose your Processor</option>
+			<option value="i3 10100">i3 10100</option>
+			<option value="i5 10400">i5 10400</option>
+			<option value="i5 10600k">i5 10600k</option>
+			<option value="i7 10700">i7 10700</option>
+			<option value="i9 10900">i9 10900</option>
+			<option value="i7 10900k">i7 10900k</option>
+			<option value="i3 11100">i3 11100</option>
+			<option value="i5 11400">i5 11400</option>
+			<option value="i5 11600k">i5 11600k</option>
+			<option value="i7 11700">i7 11700</option>
+			<option value="i7 11700k">i7 11700k</option>
+			<option value="i9 11900">i9 11900</option>
+			<option value="i9 11900k">i9 11900k</option>
+			<option value="i3 12100">i3 12100</option>
+			<option value="i5 12400">i5 12400</option>
+			<option value="i5 12600k">i5 12600k</option>
+			<option value="i7 12700">i7 12700</option>
+			<option value="i7 12700k">i7 12700k</option>
+			<option value="i9 12900">i9 12900</option>
+			<option value="i9 12900k">i9 12900k</option>
+			<option value="i3 13100">i3 13100</option>
+			<option value="i5 13400">i5 13400</option>
+			<option value="i5 13600k">i5 13600k</option>
+			<option value="i7 13700">i7 13700</option>
+			<option value="i7 13700k">i7 13700k</option>
+			<option value="i9 13900">i9 13900</option>
+			<option value="i9 13900k">i9 13900k</option>
+			<option value="5 3600x">5 3600x</option>
+			<option value="7 3800x">7 3800x</option>
+			<option value="9 3900x">9 3900x</option>
+			<option value="9 3950x">9 3950x</option>
+			<option value="5 5600x">5 5600x</option>
+			<option value="7 5700x">7 5700x</option>
+			<option value="7 5800x">7 5800x</option>
+			<option value="9 5900x">9 5900x</option>
+			<option value="9 5950x">9 5950x</option>
+			<option value="5 7600x">5 7600x</option>
+			<option value="7 7800x">7 7800x</option>
+			<option value="9 7900x">9 7900x</option>
+			<option value="9 7950x">9 7950x</option>
+		
+		<label for="mobo" class="fw-bold text-center">Motherboard</label>
+		<hr>
+		<select name="mobo" class="form-select">
+			<option selected">Choose your Motherboard</option>
+			<option value="120">120</option>
+			<option value="240">240</option>
+			<option value="360">360</option>
+			
+		<label for="cooling" class="fw-bold text-center">cooling</label>
+		<hr>
+		<select name="cooling" class="form-select">
+				<option selected">Choose your cooling</option>
+				<option value="120">120</option>
+				<option value="240">240</option>
+				<option value="360">360</option>
+
+		</select>
+		<br />
+		<br /> -->
+
+		<input type="submit" value="Generate the price" />
+	</form>
+
+	<!-- <div class="container mt-5">
+		<h1 class="fw-bold">Price</h1>
+		<hr />
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">No</th>
+					<th scope="col">VGA</th>
+					<th scope="col">RAM</th>
+					<th scope="col">Processor</th>
+					<th scope="col">cooling</th>
+					<th scope="col">Motherboard</th>
+					<th scope="col">psu</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for d in data %}
+				<tr>
+					{% for l in d %}
+					<td>{{l}}</td>
+					{% endfor %}
+				</tr>
+			</tbody>
+		</table> -->
+	</div> 
+</div>
+
+{% endblock main %}

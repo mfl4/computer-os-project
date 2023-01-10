@@ -1,6 +1,10 @@
 from django.views.generic.base import TemplateView
 from django.shortcuts import render
+from django.views import View
+
+# from main_apps.listingitem import *
 from .program import *
+
 
 class IndexView(TemplateView):
     template_name = "pages/index.html"
@@ -11,32 +15,51 @@ class IndexView(TemplateView):
         }
         return context
 
-class ProgramView(TemplateView):
+class ProgramView(View):
     template_name = "pages/program.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
 
     def post(self, request):
         # Mengambil input dari form
-        processor = request.POST['processor']
-        memory = request.POST['memory']
-        hard_drive = request.POST['hard_drive']
-        graphics_card = request.POST['graphics_card']
+        ram = request.POST['ram']
+        vga = request.POST['vga']
+        # processor = request.POST['processor']
+        # mobo = request.POST['mobo']
+        # psu = request.POST['psu']
+        # cooling = request.POST['cooling']
         
-        print(processor)
-        print(memory)
-        print(hard_drive)
-        print(graphics_card)
-        computer = Computer(processor, memory, hard_drive, graphics_card)
+        print(vga)
+        print(ram)
+        # print(processor)
+        # print(mobo)
+        # print(psu)
+        # print(cooling)
+        computer = Computer(vga, ram)
         price = computer.sum_price()
+        print(price)
+
+        context = {
+            "vga" : vga,
+            "ram" : ram,
+            "price": price
+        }
 
         # Menambahkan hasil ke context data
-        context = {
-            "processor": processor,
-            "memory": memory,
-            "hard_drive": hard_drive,
-            "graphics_card": graphics_card,
-            "price": price
-            }
-        return render(self.template_name, context)
+        return render(request, self.template_name, context=context)
+
+    # def post(request):
+    #     context = {
+    #         "vga": request.post["vga"],
+    #         "ram": request.post["ram"]
+    #         "processor": processor,
+    #         "mobo": mobo,
+    #         "psu": psu,
+    #         "cooling": cooling,
+    #         "price" : price
+    #         'data' : take_data()
+    #     }
 
 class HistoryView(TemplateView):
     template_name = "pages/history.html"
