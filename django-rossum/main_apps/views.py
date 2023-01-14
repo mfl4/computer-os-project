@@ -19,10 +19,11 @@ class ProgramView(View):
     template_name = "pages/program.html"
 
     def get(self, request):
+        
+        # Mengambil input dari form
         return render(request, self.template_name)
 
     def post(self, request):
-        # Mengambil input dari form
         ram = request.POST['ram']
         vga = request.POST['vga']
         # processor = request.POST['processor']
@@ -30,36 +31,17 @@ class ProgramView(View):
         # psu = request.POST['psu']
         # cooling = request.POST['cooling']
         
-        print(vga)
-        print(ram)
-        # print(processor)
-        # print(mobo)
-        # print(psu)
-        # print(cooling)
         computer = Computer(vga, ram)
         price = computer.sum_price()
-        print(price)
 
+        # Menambahkan hasil ke context data
         context = {
             "vga" : vga,
             "ram" : ram,
             "price": price
         }
 
-        # Menambahkan hasil ke context data
         return render(request, self.template_name, context=context)
-
-    # def post(request):
-    #     context = {
-    #         "vga": request.post["vga"],
-    #         "ram": request.post["ram"]
-    #         "processor": processor,
-    #         "mobo": mobo,
-    #         "psu": psu,
-    #         "cooling": cooling,
-    #         "price" : price
-    #         'data' : take_data()
-    #     }
 
 class HistoryView(TemplateView):
     template_name = "pages/history.html"

@@ -7,9 +7,9 @@
 		{% csrf_token %}
 
 		<label for="vga" class="fw-bold text-center">VGA</label>
-		<hr>
+		<hr />
 		<select name="vga" class="form-select">
-			<option selected">Choose your VGA</option>
+			<option selected>Choose your VGA</option>
 			<option value="GTX 1050">GTX 1050</option>
 			<option value="GTX 1050 TI">GTX 1050 TI</option>
 			<option value="GTX 1650">GTX 1650</option>
@@ -38,9 +38,9 @@
 		<br />
 
 		<label for="ram" class="fw-bold text-center">RAM</label>
-		<hr>
+		<hr />
 		<select name="ram" class="form-select">
-			<option selected">Choose your RAM</option>
+			<option selected>Choose your RAM</option>
 			<option value="8 GB">8 GB</option>
 			<option value="16 GB">16 GB</option>
 			<option value="32 GB">32 GB</option>
@@ -48,23 +48,9 @@
 		</select>
 		<br />
 		<br />
-
-		<!-- <label for="hard_drive">Hard Drive:</label>
-		<select name="hard_drive">
-			<option value="500GB">500GB</option>
-			<option value="1TB">1TB</option>
-			<option value="2TB">2TB</option>
-		</select>
-		<br />
-		<br />
-		<label for="graphics_card">Graphics Card:</label>
-		<select name="graphics_card">
-			<option value="Integrated">Integrated</option>
-			<option value="Dedicated">Dedicated</option>
-		</select>
-		<br />
-		<br /> -->
 		<input type="submit" value="Generate the price" />
+		<br />
+		<br />
 	</form>
 
 	<div class="container mt-5">
@@ -87,18 +73,7 @@
 					<th>1</th>
 					<td>{{vga}}</td>
 					<td>{{ram}}</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td colspan="2">Larry the Bird</td>
-					<td>@twitter</td>
+					<td>{{ price }}</td>
 				</tr>
 			</tbody>
 		</table>
